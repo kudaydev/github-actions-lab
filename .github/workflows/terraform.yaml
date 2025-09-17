@@ -9,9 +9,10 @@ on:
       action:
         description: 'Action to perform'
         required: true
-        default: 'apply'
+        default: 'none'
         type: choice
         options:
+          - none
           - apply
           - destroy
 
