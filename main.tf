@@ -2,9 +2,8 @@ terraform {
   backend "s3" {
     bucket         = "my-terraform-state-bucket-0431" # Replace with your bucket
     key            = "ec2/terraform.tfstate"
-    region         = var.aws_region
+    region         = "ap-south-1" 
     encrypt        = true
-    use_locking    = true   # <-- Native state locking (Terraform v1.10+)
   }
 }
 
